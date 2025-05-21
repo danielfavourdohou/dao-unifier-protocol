@@ -1,0 +1,44 @@
+[project]
+name = 'dao-unifier-protocols'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.utils]
+path = 'contracts/utils.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.proposal]
+path = 'contracts/proposal.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.dao-unifier]
+path = 'contracts/dao-unifier.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.dao-factory]
+path = 'contracts/dao-factory.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.voting-power]
+path = 'contracts/voting-power.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.funding]
+path = 'contracts/funding.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
